@@ -3,3 +3,75 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+/*portada*/
+.natura{
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: rgb(246, 248, 247);
+    background-image: url(portada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*navegacion*/
+.nav{
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-title {
+    font-weight: 300;
+}
+
+.nav-link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-links-menu {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navegacion-menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-img-hamburguesa {
+    display: block;
+    width: 30px;
+}
+
+
+.img-nav {
+    display: none;
+}
