@@ -44,18 +44,23 @@ body{
 
 .nav-link{
     margin-left: auto;
-    padding: 0;
+    padding: 0px;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
 }
+.navegacion-links{
+    color: #fff;
+    text-decoration: none;
+}
 
 .nav-items {
     list-style: none;
+    
 }
 
-.nav-links-menu {
+.nav-link-menu {
     color: #fff;
     text-decoration: none;
 }
@@ -72,6 +77,308 @@ body{
 }
 
 
-.img-nav {
+.nav-img-close {
     display: none;
+}
+
+/*sigo en el header, en la breve descripcion*/
+.natura-cont{
+    max-width: 800px;
+    padding: 0px;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.natura-title{
+    font-size: 3rem;
+}
+
+.natura-paragraph{
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/*Empiezo con el main*/
+
+.about-natura{
+    text-align: center;
+}
+
+.subtitle {
+    color: #001A49;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about-paragraph-main{
+    line-height: 1.7;
+}
+
+/*los 3 parrafos*/
+.about-main-parrafitos{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto)); /*p/ crear automaticamente las columnas al cambiar de tamano de dispositivo, sin usar media queries*/
+}
+
+.about-icons{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+
+.about-icon1{
+    width: 40px;
+}
+
+/*main/DESCUENTOS*/ 
+/*https://www.magicpattern.design/*/
+.promociones{
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+}
+
+.promociones-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.promociones-picture{
+    max-width: 500px;
+}
+
+.promociones-img{
+    width: 100%;
+    display: block;
+}
+
+.promociones-parrafo{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* novedades */
+
+.novedades{
+    text-align: center;
+}
+
+.novedades__table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.novedades__element{
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan: #696871;
+    --color-price: #1D293F;
+    --bg-cta: #fff;
+    --color-cta: #5454D4;
+    --color-items: #696871;
+}
+
+.novedades__element--best{
+    width: 370px;
+    padding: 60px 40px;
+    background-color: #FF7143;
+    --color-plan: rgb(255 255 255 / 75%);
+    --color-price: #fff;
+    --bg-cta: #9F3919;
+    --color-cta: #FFF;
+    --color-items: #fff;
+}
+
+
+.novedades__name{
+    color: purple;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.novedades__price{
+    font-size: 2.5rem;
+    color: green;
+}
+
+.novedades__items{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: blue;
+}
+
+.novedades__cta{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: yellow;
+    font-weight: 600;
+    color: red;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+}
+
+/* ambiente.................................... */
+
+.ambiente{
+    background-color: lightgreen;
+}
+
+.ambiente__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.ambiente__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.ambiente__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.ambiente__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.ambiente__texts{
+    max-width: 700px;
+}
+
+.ambiente__course{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.ambiente__arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
+/* Questions */
+
+.questions{
+    text-align: center;
+}
+
+.questions__container{
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.questions__padding{
+    padding: 0;
+    transition: padding .3s;
+    border: 1px solid #5454D4;
+    border-radius: 6px;
+}
+
+.questions__padding--add{
+    padding-bottom: 30px;
+}
+
+.questions__answer{
+    padding: 0 30px 0;
+    overflow: hidden;
+}
+
+.questions__title{
+    text-align: left;
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0 30px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;
+}
+
+.questions__arrow{
+    border-radius: 50%;
+    background-color: var(--color-title);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    margin-left: 10px;
+    transition:  transform .3s;
+}
+
+.questions__arrow--rotate{
+    transform: rotate(180deg);
+}
+
+.questions__show{
+    text-align: left;
+    height: 0;
+    transition: height .3s;
+}
+
+.questions__img{
+    display: block;
+}
+
+.questions__copy{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
