@@ -12,7 +12,7 @@ body{
     padding: 100px 0;
 }
 
-/*portada*/
+/*-------------------------------------------------------portada-----------------------------------------------------*/
 .natura{
     padding: 0;
     width: 100%;
@@ -30,7 +30,7 @@ body{
 }
 
 
-/*navegacion*/
+/*----------------------------------------------------------navegacion------------------------------------------*/
 .nav{
     padding: 0px;
     height: 100%;
@@ -81,7 +81,7 @@ body{
     display: none;
 }
 
-/*sigo en el header, en la breve descripcion*/
+/*-----------------------------------------------sigo en el header, en la breve descripcion-----------------------*/
 .natura-cont{
     max-width: 800px;
     padding: 0px;
@@ -111,7 +111,7 @@ body{
     border-radius: 32px;
 }
 
-/*Empiezo con el main*/
+/*-------------------------------------------------------------Empiezo con el main-------------------------------*/
 
 .about-natura{
     text-align: center;
@@ -127,7 +127,7 @@ body{
     line-height: 1.7;
 }
 
-/*los 3 parrafos*/
+/*----------------------------------------------------------------------los 3 parrafos-----------------------------*/
 .about-main-parrafitos{
     padding-top: 80px;
     display: grid;
@@ -152,7 +152,7 @@ body{
     width: 40px;
 }
 
-/*main/DESCUENTOS*/ 
+/*-----------------------------------------------main/DESCUENTOS----------------------------------------------*/ 
 /*https://www.magicpattern.design/*/
 .promociones{
     background-color: #e5e5f7;
@@ -183,7 +183,7 @@ body{
     margin-bottom: 15px;
 }
 
-/* novedades */
+/*-------------------------------------------------------------------- novedades-----------------------------------------*/
 
 .novedades{
     text-align: center;
@@ -255,7 +255,7 @@ body{
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
-/* ambiente.................................... */
+/*----------------------------------------------------- ambiente.................................... */
 
 .ambiente{
     background-color: lightgreen;
@@ -311,7 +311,7 @@ body{
     cursor: pointer;
 }
 
-/* Questions */
+/*-------------------------------------------------------------------- Questions------------------------------------- */
 
 .questions{
     text-align: center;
