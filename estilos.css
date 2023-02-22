@@ -81,7 +81,7 @@ body{
     display: none;
 }
 
-/*-----------------------------------------------sigo en el header, en la breve descripcion-----------------------*/
+/*-----------------------------------------------sigo en el header, en la breve descripción-----------------------*/
 .natura-cont{
     max-width: 800px;
     padding: 0px;
@@ -255,7 +255,7 @@ body{
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
 
-/*----------------------------------------------------- ambiente.................................... */
+/*----------------------------------------------------- ambiente.(SLIDER)................................... */
 
 .ambiente{
     background-color: lightgreen;
@@ -276,13 +276,13 @@ body{
     gap: 2em;
     grid-column: 2/3;
     grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 0;  /*p/ocultar los otros elementos del slider*/
+    pointer-events: none;   /*p/ocultar los otros elementos del slider y no podamos seleccionarlos*/
 }
 
 
 .ambiente__body--show{
-    pointer-events: unset;
+    pointer-events: unset;/*p/q' vaya a la propiedad original*/
     opacity: 1;
     transition: opacity 1.5s ease-in-out;
 }
@@ -300,10 +300,14 @@ body{
 }
 
 .ambiente__course{
-    background-color: royalblue;
+    background-color: rgb(99, 194, 115);
     color: #fff;
     display: inline-block;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1px;
     padding: 5px;
+    margin: 25px;
 }
 
 .ambiente__arrow{
