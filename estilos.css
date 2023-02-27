@@ -27,6 +27,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 40px;
 }
 
 
@@ -99,6 +100,7 @@ body{
 
 .natura-paragraph{
     margin-bottom: 20px;
+    
 }
 
 .cta {
@@ -125,7 +127,9 @@ body{
 
 .about-paragraph-main{
     line-height: 1.7;
+  
 }
+
 
 /*----------------------------------------------------------------------los 3 parrafos-----------------------------*/
 .about-main-parrafitos{
@@ -385,4 +389,81 @@ body{
     width: 60%;
     margin: 0 auto;
     margin-bottom: 30px;
+}
+/*--------------------------------------------------------------------------FOOTER-----------------------*/
+
+.footer{
+    background-color: #1D293F;
+}
+
+.footer__title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.footer__title, .footer__newsletter{
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 60px;
+}
+
+/*------------------------------------------------------------------formulario Novedades------*/
+.footer__inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.footer__input{
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;  
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.footer__submit{
+    margin-left: auto; /*p/q' lo mande a la derecha*/
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px ;
+    background-color: #2091F9;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer__copy{
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer__copyright{
+    font-weight: 300;
+}
+
+.footer__icons{
+    margin-bottom: 10px;
+    
+}
+
+.footer__img{
+    width: 30px;
+    
 }
